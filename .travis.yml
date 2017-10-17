@@ -28,3 +28,9 @@ matrix:
 notifications:
     on_success: never
     on_failure: always
+env:
+  global:
+    - CI=true
+  matrix:
+    - TEST_DOC=false
+    - TEST_DOC=true
